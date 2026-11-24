@@ -1,0 +1,6 @@
+{
+  "domains": ["gulf.moneroocean.stream"],
+  "addresses": [],
+  "source": "https://moneroocean.stream/",
+  "note": "Small starter list. Add verified exact hostnames or dedicated IP addresses for your environment. DNS cache matches are tentative because IPs can be shared. The simulation uses reserved test data separately."
+}

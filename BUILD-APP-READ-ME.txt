@@ -1,0 +1,36 @@
+CRYPTOGUARD - NATIVE WINDOWS APPLICATION BUILD KIT
+=================================================
+What you get
+- Native Tkinter desktop program, NOT a web application.
+- A Windows .exe using PyInstaller (created on YOUR Windows PC).
+- Optional Windows Setup.exe installer using Inno Setup 6.
+- Same detector.py, evidence.py, dashboard.py, portable.py backend and UI code.
+
+Quick build (on Windows 10/11, 64-bit)
+1. Install Python 3.11+ from python.org. Enable Python on PATH / py launcher.
+2. Extract this ZIP, open the CryptoGuard folder.
+3. Double-click Build-Windows-App.cmd (internet needed for dependencies).
+4. Find the runnable app in dist\CryptoGuard\CryptoGuard.exe.
+   IMPORTANT: Keep the full dist\CryptoGuard folder, not just the EXE.
+5. For a full install/uninstall wizard, install Inno Setup 6, then rerun
+   Build-Windows-App.cmd, or open CryptoGuard.iss in Inno Setup and Compile.
+   Installer output: installer\CryptoGuard-Setup-1.0.0.exe.
+6. Test both Demo and Live on the target Windows computer.
+
+Already have Python? Double-click Run-Demo.cmd to see the demo before building.
+To run live mode without packaging: Setup-Live.cmd, then Start.cmd.
+
+Important safety & scope
+- Live mode monitors host processes and requires host permissions and psutil.
+- Evidence classifications are indicators, not proof of infection.
+- Defender and portable-file remediation are user-directed operations.
+- Windows-specific Defender, process access, installer and quarantine flows
+  MUST be tested on a real Windows target before distributing this build.
+- No claims of malware-free certification, digital signing, or SmartScreen trust.
+- Unsigned binaries may display Microsoft SmartScreen warnings.
+- PyInstaller Windows executables must be built on Windows, not on Linux.
+- Avoid distributing the source folder's reports, screenshots or user logs
+  as part of the compiled program; the PyInstaller spec bundles only runtime assets.
+
+This ZIP contains build tools and the desktop source. It does NOT contain
+an already-built Windows .exe or Setup.exe.

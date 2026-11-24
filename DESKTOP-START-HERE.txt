@@ -1,0 +1,31 @@
+CRYPTOGUARD - MODERN DESKTOP EDITION
+====================================
+
+This is the original Cryptojacking Detector (Tkinter) project with a redesigned
+DESKTOP interface. It does NOT run a web server or open in a web browser.
+
+On a Windows 10/11 PC:
+  1) Extract the entire ZIP to a folder.
+  2) Install Python 3.11+ including Tkinter (Tcl/Tk), if needed.
+  3) Double-click Run-Demo.cmd to open the app with safe simulated findings.
+     Or double-click Start.cmd and press Run safe demo in the app.
+  4) For real process monitoring, double-click Setup-Live.cmd ONE TIME to
+     install psutil. Then open Start.cmd and choose Start live monitor.
+  5) Select a process, press Inspect selected process, then read Findings
+     and Evidence Inspector. The original review and safe action tools remain.
+
+Important distinctions:
+  - Demo mode uses generated examples, not actual malware or mining.
+  - High CPU activity alone does NOT establish cryptojacking.
+  - Live remediation and native Windows integrations require testing on
+    the target Windows computer. Review evidence before any file action.
+
+Code:
+  dashboard.py  -> redesigned dark Tkinter desktop UI
+  detector.py   -> original process sampler and demo engine
+  evidence.py   -> original evidence and rule engine
+  portable.py   -> original isolated-file functions
+  tools/windows.ps1 -> original Windows integration helper
+
+The original Project-Report.pdf is included for your reference.
+See README.md for technical instructions and limitations.

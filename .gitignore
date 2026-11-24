@@ -1,0 +1,39 @@
+# CryptoGuard - keep generated and local files out of GitHub
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.build-env/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# Local executable/installer build output
+/build/
+/dist/
+/installer/
+
+# Local logs and monitoring records (may contain system information)
+*.log
+alerts.csv
+alerts.jsonl
+demo_alerts.csv
+demo_alerts.jsonl
+process_reviews.csv
+process_reviews.jsonl
+actions.jsonl
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Temporary archives and classroom submission report
+*.zip
+Project-Report.pdf
+
+# OS files
+Thumbs.db
+.DS_Store
